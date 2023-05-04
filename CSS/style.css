@@ -1,0 +1,71 @@
+:root {
+  --uno:#fefae0;
+  --dos:#fb8500; 
+  --tres:#023047;
+  --cuatro:#ffb703;
+  --fuente: 'Comme', sans-serif;
+}
+
+
+html {
+
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--uno);  
+  /* con  var se llama a la variable del color que deseas agregar */
+  font-size: 16px; /* 1rem = 10px */
+  text-align: center;
+  font-family: var(--fuente);
+}
+
+span {
+  font-size: 2rem;
+}
+
+.titulo {
+  color: var(--cuatro);
+}
+.titulos {
+  color: var(--tres);
+}
+
+
+
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  background: var(--dos);
+}
+
+.navegacion a{
+font-size: 2rem;
+font-weight: 700;
+text-decoration: none;
+color: var(--tres);
+padding: 1rem;
+}
+
+.navegacion a:hover{
+  color: var(--uno);
+  background-color: var(--tres);
+}
+
+.contenedor {
+width: 70rem;
+margin-top: 0;
+margin-right: auto;
+margin-bottom: 0;
+margin-left: auto;
+}
+
+.agrandar-nav {
+  background-color: var(--dos);
+}
+
+.fondo{
+  background-image: url(../jugos.jpg);
+  background-size: cover;
+  height: 40rem;
+}
