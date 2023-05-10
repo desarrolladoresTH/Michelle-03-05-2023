@@ -69,3 +69,9 @@ margin-left: auto;
   background-size: cover;
   height: 40rem;
 }
+
+@media (max-width: 480px) {
+  .principal {
+    flex-direction: column;
+  }
+}
