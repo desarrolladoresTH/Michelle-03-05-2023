@@ -4,7 +4,7 @@ Proyecto front para principiantes.
 
 ## en este proyecto se utilizo:
 
-*HTML.
-*CSS.
-*git y terminal de comandos.
+* HTML.
+* CSS.
+* git y terminal de comandos.
 

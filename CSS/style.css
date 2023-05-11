@@ -37,14 +37,31 @@ span {
   display: flex;
   justify-content: space-between;
   background: var(--dos);
+  align-items: stretch;
 }
 
+
 .navegacion a{
-font-size: 2rem;
-font-weight: 700;
-text-decoration: none;
-color: var(--tres);
-padding: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--tres);
+  padding: 1rem ;
+  }
+
+@media (max-width: 480px) {
+  .navegacion a {
+    padding: 1rem 2rem;
+    margin: 0;
+    color: var(--uno);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: .5rem;
+    border: 2px solid var(--uno);
+    background-color: var(--tres);
+    text-align: center;
+  }
 }
 
 .navegacion a:hover{
@@ -53,16 +70,34 @@ padding: 1rem;
 }
 
 .contenedor {
-width: 70rem;
-margin-top: 0;
-margin-right: auto;
-margin-bottom: 0;
-margin-left: auto;
-}
+  width: 70rem;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  }
+
+  @media (max-width: 480px) {
+    .contenedor {
+      width: 10rem;
+    }
+  }
+
+
+  @media (max-width: 480px){
+    .navegacion {
+      flex-direction: column;
+      background-color: var(--cuatro);
+      align-items: stretch;
+    }
+  }
+
 
 .agrandar-nav {
   background-color: var(--dos);
 }
+
+
 
 .fondo{
   background-image: url(../jugos.jpg);
@@ -71,7 +106,8 @@ margin-left: auto;
 }
 
 @media (max-width: 480px) {
-  .principal {
-    flex-direction: column;
+  .navegacion a:hover  {
+    background-color: var(--tres);
+    color: #fefae0;
   }
 }
